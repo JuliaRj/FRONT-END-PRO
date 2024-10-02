@@ -18,16 +18,16 @@
      const num = prompt("Введіть трьохзначне число");
      const numArray = num.split('');
     
-     if ((numArray.length - 1) === 3){
+    if ((numArray.length - 1) === 3){
         if ((numArray[0] === numArray[1]) && (numArray[1] === numArray[2])) {
-            alert('Усі цифри однакові!');
-        }
-        else ((numArray[0] === numArray[1]) || (numArray[1] === numArray[2]) || (numArray[0] === numArray[2])) {
-            alert(`Серед цифр є однакові!`);
-        }
-     }
- 
-    
+           alert('Усі цифри однакові!');
+       } else  {
+                if ((numArray[0] === numArray[1])||(numArray[1] === numArray[2])||(numArray[0] === numArray[2])){
+                  alert("Серед цифр є однакові!");
+                }
+            }
+      
+    }
    </script>
   </body>
 </html>
