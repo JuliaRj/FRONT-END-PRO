@@ -42,7 +42,7 @@
             alert(`Шкода, що Ви не захотіли ввести свій рік народження`);
             break;
             default:
-            alert(`Тобі ${age} років!`);
+            ageUserString  = `Тобі ${age} років!`
     }
 
 
@@ -51,18 +51,19 @@
             alert(`Шкода, що Ви не захотіли ввести своє місто`);
             break;
         case "Київ":
-            alert(`Ти живеш в столиці ${cityUser}!`);
+            cityUserString = `Ти живеш в столиці ${cityUser}!`;
+            
             break;
 
         case "Вашингтон":
-            alert(`Ти живеш в столиці ${cityUser}!`);
+             cityUserString = `Ти живеш в столиці ${cityUser}!`;
             break;
 
         case "Лондон":
-            alert(`Ти живеш в столиці ${cityUser}!`);
+              cityUserString = `Ти живеш в столиці ${cityUser}!`;
             break;
         default:
-            alert(`Ти живеш в місті ${cityUser}!`);
+              cityUserString = `Ти живеш в місті ${cityUser}!`;
     }
 
 
@@ -70,21 +71,23 @@
         case null:
             alert(`Шкода, що Ви не захотіли ввести улюблений вид спорту`);
             break;
-        case "футбол":
-            alert('Круто! Хочеш стати Андрійом Шевченко?');
+        case "хоббіхорсінг":
+            sportUserString = 'Круто! Хочеш стати як Розі Муларі?';
             break;
 
         case "баскетбол":
-            alert('Круто! Хочеш стати Майклом Джорданом?');
+             sportUserString = 'Круто! Хочеш стати Майклом Джорданом?';
             break;
 
         case "бокс":
-            alert('Круто! Хочеш стати Александром Усіком?');
+             sportUserString = 'Круто! Хочеш стати Александром Усіком?';
             break;
         default:
             alert('Круто!');
     }
+    alertString = `${ageUserString} \n ${cityUserString}. \n ${sportUserString}`;
 
+    alert(alertString);
 </script>
 <!-- ДЗ 4.3. Робота з prompt -->
 <script>
