@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+
+  <!-- ДЗ 4.1. Робота з prompt -->
+  <!-- <script>
+    const name = prompt("ім'я користувача");
+    const yourName = alert(`Hello, ${name}! How are you?`);
+  </script>  -->
+ 
+  <!-- ДЗ 4.2. Робота з prompt -->
+   <script>
+     const num = prompt("Введіть трьохзначне число");
+     const numArray = num.split('');
+    
+     if ((numArray.length - 1) === 3){
+        if ((numArray[0] === numArray[1]) && (numArray[1] === numArray[2])) {
+            alert('Усі цифри однакові!');
+        }
+        else ((numArray[0] === numArray[1]) || (numArray[1] === numArray[2]) || (numArray[0] === numArray[2])) {
+            alert(`Серед цифр є однакові!`);
+        }
+     }
+ 
+    
+   </script>
+  </body>
+</html>
