@@ -16,18 +16,26 @@
   <!-- ДЗ 4.2. Робота з prompt -->
    <script>
      const num = prompt("Введіть трьохзначне число");
-     const numArray = num.split('');
-    
-    if ((numArray.length - 1) === 3){
-        if ((numArray[0] === numArray[1]) && (numArray[1] === numArray[2])) {
-           alert('Усі цифри однакові!');
-       } else  {
-                if ((numArray[0] === numArray[1])||(numArray[1] === numArray[2])||(numArray[0] === numArray[2])){
-                  alert("Серед цифр є однакові!");
+     if (isNaN(num)) {
+        const numArray = num.split('');
+        
+        if ((numArray.length) == 3){
+            if ((numArray[0] === numArray[1]) && (numArray[1] === numArray[2])) {
+            alert('Усі цифри однакові!');
+        } else  {
+                    if ((numArray[0] === numArray[1])||(numArray[1] === numArray[2])||(numArray[0] === numArray[2])){
+                    alert("Серед цифр є однакові!");
+                    }
                 }
-            }
-      
-    }
+        
+        }
+}
+   </script>
+     <!-- ДЗ 4.3. Робота з prompt -->
+   <script>
+    const name = prompt("рік народження?");
+    const name = prompt("в якому місті ви живете?");
+    const name = prompt("улюблений вид спорту?");
    </script>
   </body>
 </html>
