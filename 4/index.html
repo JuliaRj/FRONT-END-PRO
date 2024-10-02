@@ -1,41 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-  </head>
-  <body>
+</head>
+<body>
 
-  <!-- ДЗ 4.1. Робота з prompt -->
-  <!-- <script>
+<!-- ДЗ 4.1. Робота з prompt -->
+<script>
     const name = prompt("ім'я користувача");
-    const yourName = alert(`Hello, ${name}! How are you?`);
-  </script>  -->
- 
-  <!-- ДЗ 4.2. Робота з prompt -->
-   <script>
-     const num = prompt("Введіть трьохзначне число");
-     if (!isNaN(num)) {
+    alert(`Hello, ${name}! How are you?`);
+</script>
+
+<!-- ДЗ 4.2. Робота з prompt -->
+<script>
+    const num = prompt("Введіть трьохзначне число");
+    if (!isNaN(num)) {
         const numArray = num.split('');
-        
-        if ((numArray.length) === 3){
+
+        if ((numArray.length) === 3) {
             if ((numArray[0] === numArray[1]) && (numArray[1] === numArray[2])) {
-            alert('Усі цифри однакові!');
-        } else  {
-                    if ((numArray[0] === numArray[1])||(numArray[1] === numArray[2])||(numArray[0] === numArray[2])){
+                alert('Усі цифри однакові!');
+            } else {
+                if ((numArray[0] === numArray[1]) || (numArray[1] === numArray[2]) || (numArray[0] === numArray[2])) {
                     alert("Серед цифр є однакові!");
-                    }
                 }
-        
+            }
+
         }
-}
-   </script>
-     <!-- ДЗ 4.3. Робота з prompt -->
-   <script>
-    const nameUser = prompt("рік народження?");
-    const city = prompt("в якому місті ви живете?");
-    const sport = prompt("улюблений вид спорту?");
-   </script>
-  </body>
+    }
+</script>
+<!-- ДЗ 4.3. Робота з prompt -->
+<script>
+    const ageUser = prompt("рік народження?");
+    const cityUser = prompt("в якому місті ви живете?");
+    const sportUser = prompt("улюблений вид спорту?");
+    const age = 2024 - ageUser;
+
+    switch (cityUser) {
+        case null:
+            alert(`Шкода, що Ви не захотіли ввести свій рік народження`);
+            break;
+            alert(`Тобі ${age} років!`);
+    }
+
+
+    switch (cityUser) {
+        case null:
+            alert(`Шкода, що Ви не захотіли ввести своє місто`);
+            break;
+        case "Київ":
+            alert(`Ти живеш в столиці ${cityUser}!`);
+            break;
+
+        case "Вашингтон":
+            alert(`Ти живеш в столиці ${cityUser}!`);
+            break;
+
+        case "Лондон":
+            alert(`Ти живеш в столиці ${cityUser}!`);
+            break;
+        default:
+            alert(`Ти живеш в місті ${cityUser}!`);
+    }
+
+
+    switch (sporUser) {
+        case null:
+            alert(`Шкода, що Ви не захотіли ввести улюблений вид спорту`);
+            break;
+        case "футбол":
+            alert('Круто! Хочеш стати Андрійом Шевченко?');
+            break;
+
+        case "баскетбол":
+            alert('Круто! Хочеш стати Майклом Джорданом?');
+            break;
+
+        case "бокс":
+            alert('Круто! Хочеш стати Александром Усіком?');
+            break;
+        default:
+            alert('Круто!');
+    }
+
+</script>
+<!-- ДЗ 4.3. Робота з prompt -->
+<script>
+    let numOrStr = prompt('input number or string');
+    console.log(numOrStr)
+
+    switch (true) {
+        case (numOrStr === null):
+            console.log('ви скасували');
+            break;
+        case (numOrStr.trim() === ''):
+            console.log('Empty String');
+            break;
+        case (isNaN(+numOrStr)):
+            console.log('number is Ba_NaN');
+            break;
+        default:
+            console.log('OK!');
+    }
+
+
+</script>
+</body>
 </html>
