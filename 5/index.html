@@ -8,7 +8,7 @@
 <body>
 <!-- ДЗ  5.1. Вивід чисел до консолі -->
 </script>
-<!-- <script>
+ <script>
       let res = '';
       for (let i = 20; i <= 30; i += .5) {
         res += i;
@@ -17,17 +17,18 @@
         }
       }
       console.log(res);
-    </script>-->
+    </script>
 <!-- ДЗ  5.2. Розрахунок валюти -->
-<!--<script>
-        let cost = 10;
-        while (cost<=100){
-            console.log(cost * 26 + ' uah');
-            cost += 10;
+<script>
+      const exchangeRate = 26;
+
+        for (let dollars = 10; dollars <= 100; dollars += 10) {
+         let uah = dollars * exchangeRate;
+            console.log(`${dollars} доларів = ${uah} гривень`);
         }
-    </script>-->
+    </script>
 <!-- ДЗ 5.3. Пошук потрібних чисел -->
-<!-- <script>
+ <script>
 let number = '';
 let userNumber = prompt("Введіть число від 1 до 100");
 for (let i = 1; i <= 100; i++) {
@@ -40,7 +41,7 @@ for (let i = 1; i <= 100; i++) {
 }
 console.log(number);
 
- </script>-->
+ </script>
 
 <!-- ДЗ 5.4. Просте число чи ні -->
 <script>
