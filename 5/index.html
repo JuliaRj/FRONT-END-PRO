@@ -51,11 +51,15 @@ if (userSimpleNumber < 2) {
     console.log(`Це не число!`);
 } else {
     for (let i = 2; i < userSimpleNumber; i++) { 
-        if (userSimpleNumber % i == 0) continue; 
-       
+        if (userSimpleNumber % i == 0){
+         console.log(`Це не просте число!`);
+         break; 
+        } else {
+            console.log(`Це просте число!`);
+            break;
         }
-    console.log(`Це просте число!`);
     }
+}
     </script>
   </body>
 </html>
