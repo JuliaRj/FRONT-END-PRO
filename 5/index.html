@@ -7,7 +7,8 @@
   </head>
   <body>
     <!-- ДЗ  5.1. Вивід чисел до консолі -->
-    <script>
+</script>
+<!-- <script>
       let res = '';
       for (let i = 20; i <= 30; i += .5) {
         res += i;
@@ -16,13 +17,45 @@
         }
       }
       console.log(res);
-    </script>
+    </script>-->
     <!-- ДЗ  5.2. Розрахунок валюти -->
-    <script></script>
+<!--<script>
+        let cost = 10;
+        while (cost<=100){
+            console.log(cost * 26 + ' uah');
+            cost += 10;
+        }
+    </script>-->
     <!-- ДЗ 5.3. Пошук потрібних чисел -->
-    <script></script>
+   <!-- <script>
+let number = '';
+let userNumber = prompt("Введіть число від 1 до 100");
+for (let i = 1; i <= 100; i++) {
+    if (Math.pow(i, 2) <= userNumber) {
+        number += i;
+        if (i < 100){
+            number += ' ';
+        }
+    }
+}
+console.log(number);
+
+    </script>-->
 
     <!-- ДЗ 5.4. Просте число чи ні -->
-    <script></script>
+    <script>
+const userSimpleNumber = prompt('Введіть число більше 1');
+if (userSimpleNumber < 2) {
+    console.log(`Це не просте число!`);
+} else if (isNaN(userSimpleNumber)) {
+    console.log(`Це не число!`);
+} else {
+    for (let i = 2; i < userSimpleNumber; i++) { 
+        if (i % userSimpleNumber == 0) continue; 
+        console.log(`Це не просте число!`);
+        }
+    console.log(`Це просте число!`);
+    }
+    </script>
   </body>
 </html>
