@@ -51,8 +51,8 @@ if (userSimpleNumber < 2) {
     console.log(`Це не число!`);
 } else {
     for (let i = 2; i < userSimpleNumber; i++) { 
-        if (i % userSimpleNumber == 0) continue; 
-        console.log(`Це не просте число!`);
+        if (userSimpleNumber % i == 0) continue; 
+       
         }
     console.log(`Це просте число!`);
     }
