@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-</head>
-<body>
-
-<!-- ДЗ 4.1. Робота з prompt -->
-<!-- <script>
+  </head>
+  <body>
+    <!-- ДЗ 4.1. Робота з prompt -->
+    <!-- <script>
     const name = prompt("ім'я користувача");
     alert(`Hello, ${name}! How are you?`);
 </script> -->
-<!--  ДЗ 4.2. Робота з prompt -->
-<!-- <script>
+    <!--  ДЗ 4.2. Робота з prompt -->
+    <!-- <script>
     const num = prompt("Введіть трьохзначне число");
     if (!isNaN(num)) {
         const numArray = num.split('');
@@ -30,66 +29,65 @@
         }
     } 
 </script> -->
-<!-- ДЗ 4.3. Робота з prompt -->
-<script>
-    const userAge = prompt("рік народження?");
-    const userCity = prompt("в якому місті ви живете?");
-    const userSport = prompt("улюблений вид спорту?");
-    const age = 2024 - userAge;
+    <!-- ДЗ 4.3. Робота з prompt -->
+    <script>
+      const userAge = prompt("рік народження?");
+      const userCity = prompt("в якому місті ви живете?");
+      const userSport = prompt("улюблений вид спорту?");
+      const age = 2024 - userAge;
 
-    switch (userAge) {
+      switch (userAge) {
         case null:
-            alert(`Шкода, що Ви не захотіли ввести свій рік народження`);
-            break;
-            default:
-            userAgeString  = `Тобі ${age} років!`
-    }
+          alert(`Шкода, що Ви не захотіли ввести свій рік народження`);
+          break;
+        default:
+          userAgeString = `Тобі ${age} років!`;
+      }
 
-
-    switch (userCity) {
+      switch (userCity) {
         case null:
-            alert(`Шкода, що Ви не захотіли ввести своє місто`);
-            break;
+          alert(`Шкода, що Ви не захотіли ввести своє місто`);
+          break;
         case "Київ":
-            userCityString = `Ти живеш в столиці ${userCity}!`;
-            
-            break;
+          userCityString = `Ти живеш в столиці ${userCity}!`;
+
+          break;
 
         case "Вашингтон":
-             userCityString = `Ти живеш в столиці ${userCity}!`;
-            break;
+          userCityString = `Ти живеш в столиці ${userCity}!`;
+          break;
 
         case "Лондон":
-              userCityString = `Ти живеш в столиці ${userCity}!`;
-            break;
+          userCityString = `Ти живеш в столиці ${userCity}!`;
+          break;
         default:
-              userCityString = `Ти живеш в місті ${userCity}!`;
-    }
+          userCityString = `Ти живеш в місті ${userCity}!`;
+      }
 
-
-    switch (userSport) {
+      switch (userSport) {
         case null:
-            alert(`Шкода, що Ви не захотіли ввести улюблений вид спорту`);
-            break;
+          alert(`Шкода, що Ви не захотіли ввести улюблений вид спорту`);
+          break;
         case "хоббіхорсінг":
-            userSportString = 'Круто! Хочеш стати як Розі Муларі?';
-            break;
+          userSportString = "Круто! Хочеш стати як Розі Муларі?";
+          break;
 
         case "баскетбол":
-             userSportString = 'Круто! Хочеш стати Майклом Джорданом?';
-            break;
+          userSportString = "Круто! Хочеш стати Майклом Джорданом?";
+          break;
 
         case "бокс":
-             userSportString = 'Круто! Хочеш стати Александром Усіком?';
-            break;
+          userSportString = "Круто! Хочеш стати Александром Усіком?";
+          break;
         default:
-            alert('Круто!');
-    }
-    console.log(`${userAgeString} \n ${userCityString}. \n ${userSportString}`);
-
-</script>
-<!-- ДЗ 4.3. Робота з prompt -->
-<!-- <script>
+          alert("Круто!");
+      }
+      console.log(
+        `${userAgeString} \n ${userCityString}. \n ${userSportString}`
+      );
+    </script>
+    <!-- ДЗ 4.3. Робота з prompt -->
+    <!-- <script>
     let numOrStr = prompt('input number or string');
     console.log(numOrStr)
 
@@ -109,5 +107,5 @@
 
 
 </script> -->
-</body>
+  </body>
 </html>
