@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title></title>
-  </head>
-  <body>
-    <!-- ДЗ  5.1. Вивід чисел до консолі -->
+</head>
+<body>
+<!-- ДЗ  5.1. Вивід чисел до консолі -->
 </script>
 <!-- <script>
       let res = '';
@@ -18,7 +18,7 @@
       }
       console.log(res);
     </script>-->
-    <!-- ДЗ  5.2. Розрахунок валюти -->
+<!-- ДЗ  5.2. Розрахунок валюти -->
 <!--<script>
         let cost = 10;
         while (cost<=100){
@@ -26,41 +26,47 @@
             cost += 10;
         }
     </script>-->
-    <!-- ДЗ 5.3. Пошук потрібних чисел -->
-   <!-- <script>
+<!-- ДЗ 5.3. Пошук потрібних чисел -->
+<!-- <script>
 let number = '';
 let userNumber = prompt("Введіть число від 1 до 100");
 for (let i = 1; i <= 100; i++) {
-    if (Math.pow(i, 2) <= userNumber) {
-        number += i;
-        if (i < 100){
-            number += ' ';
-        }
-    }
+ if (Math.pow(i, 2) <= userNumber) {
+     number += i;
+     if (i < 100){
+         number += ' ';
+     }
+ }
 }
 console.log(number);
 
-    </script>-->
+ </script>-->
 
-    <!-- ДЗ 5.4. Просте число чи ні -->
-    <script>
-const userSimpleNumber = prompt('Введіть число більше 1');
-if (userSimpleNumber < 2) {
-    console.log(`Це не просте число!`);
-} else if (isNaN(userSimpleNumber)) {
-    console.log(`Це не число!`);
-} else {
-    for (let i = 2; i < userSimpleNumber; i++) { 
-        if (userSimpleNumber % i == 0){
-         console.log(`Це не просте число!`);
-         break; 
-        } else {
-            continue;
+<!-- ДЗ 5.4. Просте число чи ні -->
+<script>
+    const userSimpleNumber = prompt('Введіть число більше 1');
+    if (isNaN(userSimpleNumber)) {
+        console.log(`Це не число!`);
+    } else if (userSimpleNumber <= 1) {
+        console.log(`Це не просте число!`);
+    } else {
+        let isPrime = true;
+        for (let i = 2; i < userSimpleNumber; i++) {
+            if (userSimpleNumber % i === 0) {
+                isPrime = false;
+                break;
+            }
+            continue
         }
+        if (isPrime) {
+            console.log(`Це просте число!`);
+        } else {
+            console.log(`Це не просте число!`);
+        }
+
     }
-        
-}
- 
-    </script>
-  </body>
+
+
+</script>
+</body>
 </html>
