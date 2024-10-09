@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+</head>
+<body>
+<!-- ДЗ 6.1. Написати функцію видалення масиву символів -->
+
+ <script>
+    
+    function removeLetters(userText, lettersToRemove)
+    {
+        let result = '';
+        for (let i = 0; i < userText.length; i++){
+            if (!lettersToRemove.includes(userText[i])) {
+                result += userText[i];
+            }
+        }
+        return result;
+        
+    }
+    let result = removeLetters(" hello world", ['l', 'd']);
+    console.log(result);
+    </script>
+
+</body>
+</html>
