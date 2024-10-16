@@ -23,16 +23,17 @@ console.log (multiply(5)(2));
 function getNumber() {
     let number;
     for(let i = 0; i < 10; i++){
-        userNumber = prompt("Введіть число більше 100");
+        let userNumber = prompt("Введіть число більше 100");
         if (userNumber === null) {
             console.log("Користувач вийшов");
             return null;}  else 
-             if (!isNaN(userNumber) && userNumber > 100 ){
+             if (isNaN(userNumber) || userNumber > 100){
                 number = userNumber;
-          
+                break;
         }
+      
     }
-    console.log("Максимальна кількість спроб! Останній номер:", userNumber);
+    console.log("Останнє введення:", userNumber);
     return  number;
     
 }
