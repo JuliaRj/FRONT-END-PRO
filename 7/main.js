@@ -22,19 +22,21 @@ console.log (multiply(5)(2));
 //  ДЗ 7.3. Функція з циклом
 function getNumber() {
     let number;
-    for(let i = 0; i < 10; i++){
+    for (let i = 0; i < 10; i++) {
         let userNumber = prompt("Введіть число більше 100");
         if (userNumber === null) {
             console.log("Користувач вийшов");
-            return null;}  else 
-             if (isNaN(userNumber) || userNumber > 100 || i == 9){
-                number = userNumber;
-                break;
+            return null;
+        } else if (isNaN(userNumber) || userNumber > 100) {
+            number = userNumber;
+            break;
+        } else {
+            number = userNumber;
         }
-      
+
     }
     console.log("Останнє введення:", number);
-    return  number;
-    
+    return number;
+
 }
 getNumber();

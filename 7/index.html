@@ -6,24 +6,5 @@
     <title></title>
     <script src="main.js"></script>
   </head>
-  <body>
-    <script>
-      function getNumber() {
-        let number;
-        for (let i = 0; i < 10; i++) {
-          let userNumber = prompt("Введіть число більше 100");
-          if (userNumber === null) {
-            console.log("Користувач вийшов");
-            return null;
-          } else if (isNaN(userNumber) || userNumber > 100 || i == 9) {
-            number = userNumber;
-            break;
-          }
-        }
-        console.log("Останнє введення:", number);
-        return number;
-      }
-      getNumber();
-    </script>
-  </body>
+  <body></body>
 </html>
