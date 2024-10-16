@@ -27,13 +27,13 @@ function getNumber() {
         if (userNumber === null) {
             console.log("Користувач вийшов");
             return null;}  else 
-             if (isNaN(userNumber) || userNumber > 100){
+             if (isNaN(userNumber) || userNumber > 100 || i == 9){
                 number = userNumber;
                 break;
         }
       
     }
-    console.log("Останнє введення:", userNumber);
+    console.log("Останнє введення:", number);
     return  number;
     
 }
