@@ -20,6 +20,7 @@ return function (secondNumber) {
 console.log (multiply(5)(2));
 
 //  ДЗ 7.3. Функція з циклом
+
 function getNumber() {
     let number;
     for (let i = 0; i < 10; i++) {
@@ -35,8 +36,8 @@ function getNumber() {
         }
 
     }
-    console.log("Останнє введення:", number);
-    return number;
+
+    return console.log("Останнє введення:", number);
 
 }
 getNumber();
