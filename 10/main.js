@@ -1,6 +1,6 @@
 
 //  ДЗ 10.1. Картка користувача
-const user ={
+const user = {
     firstName: 'John',
     lastName: 'Doe',
     age: 30,
