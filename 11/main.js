@@ -17,7 +17,7 @@ button.onclick = function(){
             const randomNum = Math.floor(Math.random() * 9) + 1;
             const newImg = document.createElement('img');
         function showRandomImage() {
-            newImg.src = randomNum + '.jpg';
+            newImg.src = 'img/' + randomNum + '.jpg';
             newImg.alt = 'New img';
 
             images.appendChild(newImg);
