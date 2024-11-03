@@ -23,7 +23,7 @@
        })
  
        //  ДЗ 12.3. TODO лист
-        const button = document.querySelector('.task.btn');
+        const button = document.querySelector('.addTask');
         const task = document.querySelector('.task');
         const inputElement = document.querySelector('input');
         button.addEventListener('click', () =>{
