@@ -35,8 +35,8 @@
     const newItemLi = document.createElement('li');
     const newItemP = document.createElement('p');
     const newItemButton = document.createElement('button');
-    newItemP.textContent = 'Завдання';
-    newItemButton.textContent = inputElement.value;
+    newItemP.textContent = inputElement.value;
+    newItemButton.textContent = 'Видалити';
     newItemButton.classList = 'close';
     task.appendChild(newItemLi);
     newItemLi.appendChild(newItemP);
@@ -44,7 +44,7 @@
     
   })
   task.addEventListener('click', function (event){
-        if (event.target.tagName === "BUTTON" && event.target.classList.contains('close')){
+        if (event.target.tagName === "BUTTON"){
             event.target.closest('li').remove();
         }
   })
